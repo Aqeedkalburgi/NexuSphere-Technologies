@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" fill="none">
+  <circle cx="100" cy="60" r="45" fill="none" stroke="#00AA00" stroke-width="4"/>
+  <path d="M100 30 L110 40 L100 50 L90 40 Z" fill="#00AA00"/>
+  <text x="100" y="70" font-family="'Poppins', sans-serif" font-size="20" font-weight="700" fill="#00AA00" text-anchor="middle">ISO 27001</text>
+</svg>

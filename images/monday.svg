@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" fill="none">
+  <!-- Monday.com Logo -->
+  <circle cx="35" cy="50" r="8" fill="#FF3D57"/>
+  <circle cx="55" cy="50" r="8" fill="#FFCB00"/>
+  <circle cx="75" cy="50" r="8" fill="#00D647"/>
+  <text x="95" y="60" font-family="'Poppins', sans-serif" font-size="32" font-weight="600" fill="#FF3D57">monday</text>
+  <text x="220" y="60" font-family="'Poppins', sans-serif" font-size="24" font-weight="400" fill="#6C6CFF">.com</text>
+</svg>

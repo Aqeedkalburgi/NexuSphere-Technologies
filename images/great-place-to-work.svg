@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 100" fill="none">
+  <rect x="10" y="15" width="200" height="70" rx="10" fill="#00A3E0"/>
+  <text x="110" y="45" font-family="'Poppins', sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle">Great Place</text>
+  <text x="110" y="65" font-family="'Poppins', sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle">to Work®</text>
+  <circle cx="30" cy="50" r="8" fill="white"/>
+</svg>

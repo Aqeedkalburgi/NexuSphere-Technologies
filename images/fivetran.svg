@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" fill="none">
+  <!-- Fivetran Logo -->
+  <circle cx="30" cy="50" r="12" fill="#0073E6"/>
+  <circle cx="55" cy="50" r="12" fill="#00A8E1"/>
+  <path d="M70 50 L85 35 L85 65 Z" fill="#0073E6"/>
+  <text x="100" y="62" font-family="'Poppins', sans-serif" font-size="32" font-weight="700" fill="#0073E6">Fivetran</text>
+</svg>

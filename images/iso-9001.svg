@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" fill="none">
+  <circle cx="100" cy="60" r="45" fill="none" stroke="#0066CC" stroke-width="4"/>
+  <text x="100" y="55" font-family="'Poppins', sans-serif" font-size="24" font-weight="700" fill="#0066CC" text-anchor="middle">ISO</text>
+  <text x="100" y="75" font-family="'Poppins', sans-serif" font-size="18" font-weight="600" fill="#0066CC" text-anchor="middle">9001:2015</text>
+</svg>
