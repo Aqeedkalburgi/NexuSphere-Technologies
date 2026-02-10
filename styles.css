@@ -1209,13 +1209,27 @@ button {
    RESPONSIVE DESIGN
    =================================== */
 
+/* ===================================
+   RESPONSIVE DESIGN ENHANCEMENTS
+   =================================== */
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 var(--spacing-xl);
+    }
+}
+
 @media (max-width: 1024px) {
     .hero-title {
-        font-size: 2.75rem;
+        font-size: 3rem;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 2.25rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .contact-content {
@@ -1229,66 +1243,132 @@ button {
         top: 70px;
         left: 0;
         right: 0;
+        bottom: 0;
         background: var(--white);
         flex-direction: column;
-        padding: var(--spacing-lg);
-        box-shadow: var(--shadow-lg);
+        justify-content: center;
+        padding: var(--spacing-2xl);
+        gap: var(--spacing-xl);
         transform: translateY(-100%);
         opacity: 0;
         transition: all var(--transition-base);
+        z-index: 999;
+        visibility: hidden;
     }
 
     .nav-links.active {
         transform: translateY(0);
         opacity: 1;
+        visibility: visible;
     }
 
     .mobile-menu-btn {
         display: flex;
+        z-index: 1001;
     }
 
     .hero-title {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
     }
 
-    .hero-stats {
-        flex-direction: column;
-        gap: var(--spacing-md);
+    .hero-description {
+        font-size: 1.1rem;
     }
 
     .hero-cta {
         flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
     }
 
-    .services-grid,
-    .solutions-grid,
-    .sap-services-grid {
+    .services-grid {
         grid-template-columns: 1fr;
     }
 
-    .bot-process {
-        flex-direction: column;
+    .approach-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
     }
 
-    .process-arrow {
-        transform: rotate(90deg);
+    .benefits-grid {
+        grid-template-columns: 1fr;
     }
 
-    .title-line {
-        display: none;
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 }
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
     .section-title {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     .btn {
         width: 100%;
+        padding: 0.875rem 1.5rem;
+    }
+}
+
+/* ===================================
+   DELIVERY APPROACH STYLES
+   =================================== */
+
+.delivery-approach {
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.approach-step {
+    text-align: center;
+    padding: 30px;
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+}
+
+.approach-step:hover {
+    transform: translateY(-5px);
+}
+
+.step-num {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent-light, #3B82F6);
+    margin-bottom: 15px;
+}
+
+
+.additional-benefits {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.vision-text {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--gray-600);
+}
+
+@media (max-width: 768px) {
+    .vision-text {
+        font-size: 1.1rem;
+        padding: 0 20px;
     }
 }
