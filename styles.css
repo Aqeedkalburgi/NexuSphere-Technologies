@@ -508,15 +508,20 @@ h4 {
     grid-template-columns: 0.8fr 1.2fr;
 }
 
-.contact-sidebar {
-    background: var(--color-primary);
-    color: #fff;
-    padding: 60px;
+.contact-details {
+    margin-top: 32px;
 }
 
-.anzi-form {
-    padding: 60px;
+.contact-details p {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
 }
+
+.contact-details strong {
+    color: var(--color-accent);
+}
+
 
 .form-row {
     display: grid;
