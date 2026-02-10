@@ -1252,137 +1252,150 @@ textarea {
 }
 
 /* ===================================
-   RESPONSIVE DESIGN
+   RESPONSIVE DESIGN (FINAL CONSOLIDATED)
    =================================== */
-
-/* ===================================
-   RESPONSIVE DESIGN ENHANCEMENTS
-   =================================== */
-
-@media (max-width: 1200px) {
-    .container {
-        padding: 0 var(--spacing-xl);
-    }
-}
 
 @media (max-width: 1024px) {
-    .hero-title {
-        font-size: 3rem;
+    .container {
+        padding: 0 32px;
     }
 
-    .section-title {
-        font-size: 2.25rem;
-    }
-
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact-content {
-        grid-template-columns: 1fr;
+    .hero-h1 {
+        font-size: 3.5rem;
     }
 }
 
 @media (max-width: 768px) {
-    .nav-links {
-        position: fixed;
-        top: 70px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: var(--white);
-        flex-direction: column;
-        justify-content: center;
-        padding: var(--spacing-2xl);
-        gap: var(--spacing-xl);
-        transform: translateY(-100%);
-        opacity: 0;
-        transition: all var(--transition-base);
-        z-index: 999;
-        visibility: hidden;
-    }
-
-    .nav-links.active {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
+    .navbar {
+        padding: 15px 0;
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     .mobile-menu-btn {
         display: flex;
-        z-index: 1001;
     }
 
-    .hero-title {
-        font-size: 2.5rem;
-    }
-
-    .hero-description {
-        font-size: 1.1rem;
-    }
-
-    .hero-cta {
-        flex-direction: column;
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
         width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        transform: translateX(100%);
+        transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+        z-index: 1000;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
     }
 
-    .services-grid {
-        grid-template-columns: 1fr;
+    .nav-links.active {
+        transform: translateX(0);
     }
 
-    .approach-grid {
-        grid-template-columns: 1fr !important;
-        gap: 20px !important;
+    .nav-link {
+        font-size: 1.25rem;
     }
 
-    .benefits-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
+    .hero-premium {
+        padding: 120px 0 60px;
         text-align: center;
     }
 
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 2rem;
+    .hero-wrapper {
+        margin: 0 auto;
     }
 
-    .section-title {
-        font-size: 1.75rem;
+    .hero-h1 {
+        font-size: 2.75rem;
+    }
+
+    .hero-p {
+        font-size: 1.1rem;
+        margin: 0 auto 40px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 15px;
     }
 
     .btn {
         width: 100%;
-        padding: 0.875rem 1.5rem;
+    }
+
+    .grid-2-col {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .strategy-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title-large {
+        font-size: 2rem;
+    }
+
+    .solution-grid-modern {
+        grid-template-columns: 1fr;
+    }
+
+    .steps-flow {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .title-light {
+        font-size: 2rem;
+    }
+
+    .vision-card {
+        padding: 40px 30px;
+    }
+
+    .contact-grid-v2 {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-sidebar {
+        padding: 40px;
+    }
+
+    .anzi-form {
+        padding: 40px;
+    }
+
+    .footer-bottom-v2 {
+        flex-direction: column;
+        text-align: center;
+        gap: 32px;
     }
 }
 
-.additional-benefits {
-    margin-top: 80px;
-    text-align: center;
-}
+@media (max-width: 480px) {
+    .hero-h1 {
+        font-size: 2.25rem;
+    }
 
-.vision-text {
-    max-width: 800px;
-    margin: 20px auto;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: var(--gray-600);
-}
+    .section-tag {
+        font-size: 0.8rem;
+    }
 
-@media (max-width: 768px) {
-    .vision-text {
-        font-size: 1.1rem;
-        padding: 0 20px;
+    .section-title-large {
+        font-size: 1.75rem;
+    }
+
+    .stat-box {
+        padding: 24px;
     }
 }
