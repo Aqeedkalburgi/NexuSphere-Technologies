@@ -168,6 +168,27 @@ h4 {
     background: var(--color-primary-dark);
 }
 
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
 /* ===================================
    HERO PREMIUM
    =================================== */
@@ -297,7 +318,7 @@ h4 {
 
 .strategy-stats {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 24px;
 }
 
@@ -349,7 +370,7 @@ h4 {
 
 .solution-grid-modern {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px;
 }
 
@@ -435,6 +456,38 @@ h4 {
     line-height: 1;
     margin-bottom: 16px;
     display: block;
+}
+
+@media (max-width: 992px) {
+    .steps-flow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-2-col {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .steps-flow {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .contact-grid-v2 {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom-v2 {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
 }
 
 /* ===================================
@@ -1289,6 +1342,11 @@ textarea {
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 }
 
